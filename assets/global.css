@@ -1,0 +1,14 @@
+/* @font-face {
+    font-family: 'Kanit';
+    src: url('./fonts/Kanit-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Tahoma-Regular.ttf';
+    src: url('./fonts/Tahoma-Regular.ttf');
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
