@@ -9,15 +9,19 @@ export default {
 
 <template>
   <nuxt-link class="d-flex" :to="link + ''">
-    <span class="me-2">ดูทั้งหมด</span>
+    <span class="me-2 text">ดูทั้งหมด</span>
     <div class="circle">
-      <img src="@/assets/icons/right-arrow/bt-next.png/" alt="action-icon" />
+      <img
+        class="icon"
+        src="@/assets/icons/right-arrow/bt-next.png/"
+        alt="action-icon"
+      />
     </div>
   </nuxt-link>
 </template>
 
 <style scoped>
-span {
+.text {
   margin: 0 4px 4px 0;
   font-family: Tahoma;
   font-size: 1rem;
@@ -29,9 +33,8 @@ span {
   color: #84848f;
 }
 
-img {
-  width: 10px;
-  height: 12px;
+.text:hover {
+  color: #8272ab;
 }
 
 .circle {
@@ -44,23 +47,28 @@ img {
   border-radius: 50%;
 }
 
+.icon {
+  width: 10px;
+  height: 12px;
+}
+
 a {
   text-decoration: none;
 }
 
 @media (max-width: 912px) {
-  span {
+  .text {
     font-size: 0.5rem;
-  }
-
-  img {
-    width: 5px;
-    height: 6px;
   }
 
   .circle {
     width: 14px;
     height: 14px;
+  }
+
+  .icon {
+    width: 5px;
+    height: 6px;
   }
 }
 </style>

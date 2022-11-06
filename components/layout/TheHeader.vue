@@ -53,10 +53,10 @@ export default {
     <div class="sidebar" :class="sideBar ? 'open' : 'close'">
       <a class="closebtn" @click="closeSideBar">×</a>
       <nuxt-link to="/">Home</nuxt-link>
-      <a href="#">About Us</a>
-      <a href="#">Awards</a>
-      <a href="#">Our Businesses</a>
-      <a href="#">News & Activities</a>
+      <a href="/about-us">About Us</a>
+      <a href="/awards">Awards</a>
+      <a href="/our-business">Our Businesses</a>
+      <a href="/news">News & Activities</a>
     </div>
   </div>
 </template>
@@ -120,6 +120,10 @@ select {
 .hamburger {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .search:hover {

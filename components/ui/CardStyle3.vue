@@ -17,15 +17,18 @@ export default {
 
 <template>
   <nuxt-link :to="link + ''">
-    <div class="wrapper">
+    <div class="clip-wrapper">
       <img :src="imgSrc" :alt="name" />
-      <article-heading :text="description" class="description"></article-heading>
+      <article-heading
+        :text="description"
+        class="description"
+      ></article-heading>
     </div>
   </nuxt-link>
 </template>
 
 <style scoped>
-.wrapper {
+.clip-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,12 +55,9 @@ a {
     margin: 5px 0;
   }
 
-  .wrapper {
-    flex-direction: row;
-  }
-
   .description {
-  margin: 0 0 0 5px;
-}
+    width: 200px;
+    margin: 0 0 0 5px;
+  }
 }
 </style>

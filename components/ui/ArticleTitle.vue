@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "ArticleHeading",
+  name: "ArticleTitle",
   props: {
     text: String,
   },
@@ -8,15 +8,15 @@ export default {
 </script>
 
 <template>
-  <span class="heading">
+  <span>
     {{ text }}
   </span>
 </template>
 
 <style scoped>
-.heading {
+span {
   font-family: Kanit;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -25,19 +25,15 @@ export default {
   color: #594f74;
 }
 
-.heading:hover {
-  color: #8272ab;
-}
-
-@media (max-width: 1200px) {
-  .heading {
-    font-size: 1rem;
+@media (max-width: 1024px) {
+  span {
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .heading {
-    font-size: 0.7rem;
+  span {
+    font-size: 0.8rem;
   }
 }
 </style>

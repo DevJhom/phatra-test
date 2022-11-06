@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import SliderComponent from "../components/layout/SliderComponent";
-import NavRectangles from "../components/layout/NavRectangles";
-import Section1 from "../components/layout/Section1";
-import Section2 from "../components/layout/Section2";
+import SliderComponent from "../components/layout/Landing/SliderComponent";
+import NavRectangles from "../components/layout/Landing/NavRectangles";
+import Section1 from "../components/layout/Section1/Section1";
+import Section2 from "../components/layout/Section2/Section2";
 
 export default {
   layout: "home",

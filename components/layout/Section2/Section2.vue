@@ -1,5 +1,5 @@
 <script>
-import CardStyle3 from "../ui/CardStyle3.vue";
+import CardStyle3 from "../../ui/CardStyle3.vue";
 import FeaturedClips from "./FeaturedClips.vue";
 
 export default {
@@ -23,7 +23,7 @@ export default {
 
 <template>
   <div class="container">
-    <div class="d-flex">
+    <div class="d-flex mt-3">
       <div class="line"></div>
       <span class="kkp-channel">KKP Channel</span>
       <span class="kkp-channel-text">
@@ -55,17 +55,12 @@ export default {
       <div class="v-line"></div>
     </div>
     <div class="d-flex ms-4">
-      <a href="https://www.youtube.com/" target="_blank">
-        <img
-          src="~/assets/clips/cover-video/cover-video.jpg"
-          srcset="
-            ~/assets/clips/cover-video/cover-video@2x.jpg 2x,
-            ~/assets/clips/cover-video/cover-video@3x.jpg 3x
-          "
-          class="cover_video"
-        />
-      </a>
-      <div class="d-flex flex-column">
+      <iframe
+        src="https://www.youtube.com/embed/gFLaIDEbJHc"
+        title="KKP Focus"
+      >
+      </iframe>
+      <div class="d-flex flex-column ms-2">
         <div class="long-line"></div>
         <span class="kkp-focus">{{ active }}</span>
         <span class="kkp-focus-text">
@@ -84,11 +79,6 @@ export default {
 * {
   font-stretch: normal;
   font-style: normal;
-}
-
-img.cover_video {
-  width: 720px;
-  height: 414px;
 }
 
 .line {
@@ -146,10 +136,15 @@ img.cover_video {
   border: solid 1px #adacb9;
 }
 
+iframe {
+  width: 720px;
+  height: 414px;
+}
+
 .long-line {
   width: 266px;
   height: 2px;
-  margin: 0px 19px 0px 44px;
+  margin: 10px 19px 0px 44px;
   border-style: solid;
   border-width: 2px;
   border-image-source: linear-gradient(
@@ -204,6 +199,7 @@ img.cover_video {
 
   .clip-heading {
     font-size: 0.5rem;
+    height: 0.5rem;
     margin: 0;
   }
 
@@ -212,9 +208,9 @@ img.cover_video {
     margin: 0 5px;
   }
 
-  img.cover_video {
-    height: 100px;
-    width: auto;
+  iframe {
+    width: 50vw;
+    height: 120px;
     margin: 0;
   }
 

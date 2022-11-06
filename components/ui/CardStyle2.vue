@@ -22,8 +22,8 @@ export default {
   <nuxt-link :to="link + ''">
     <div class="wrapper">
       <img :src="imgSrc" :alt="name" />
-      <div class="text">
-        <article-heading :text="heading" class="heading"></article-heading>
+      <div class="text-wrapper">
+        <article-heading :text="heading"></article-heading>
         <article-category :text="category" class="category"></article-category>
       </div>
     </div>
@@ -34,17 +34,22 @@ export default {
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin-right: 0.8rem;
 }
 
 img {
-  width: 374px;
+  width: 20vw;
   height: auto;
   object-fit: contain;
   margin: 33px 27px 29px 2px;
 }
 
-.text {
-  width: 368px;
+img:hover {
+  border-right: 15px solid #594f74;
+}
+
+.text-wrapper{
+  width: 100%;
 }
 
 .category {
@@ -56,15 +61,24 @@ a {
 }
 
 @media (max-width: 912px) {
+  img {
+    margin: 33px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
   .wrapper {
     flex-direction: row;
-    margin: 15px 0;
+  }
+
+  .category {
+    margin-top: 5px;
   }
 
   img {
     width: 200px;
     height: auto;
-    margin: 0 8px 0 0;
+    margin: 8px 8px 0 0;
   }
 }
 </style>

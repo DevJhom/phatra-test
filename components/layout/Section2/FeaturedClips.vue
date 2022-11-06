@@ -1,6 +1,6 @@
 <script>
-import SeeAll from "../ui/SeeAll";
-import CardStyle3 from "../ui/CardStyle3";
+import SeeAll from "../../ui/SeeAll";
+import CardStyle3 from "../../ui/CardStyle3";
 
 import clip1 from "@/assets/clips/clip-1/clip-1.jpg";
 import clip2 from "@/assets/clips/clip-2/clip-2.jpg";
@@ -40,8 +40,8 @@ export default {
 
 <template>
   <div class="mb-5">
-    <see-all class="d-flex justify-content-end my-3" link="/clips"></see-all>
-    <div class="wrapper">
+    <see-all class="d-flex justify-content-end my-2" link="/clips"></see-all>
+    <div class="clips-wrapper">
       <card-style-3
         v-for="clip in clips"
         :key="clip.id"
@@ -55,19 +55,12 @@ export default {
 </template>
 
 <style scoped>
-.wrapper {
+.clips-wrapper {
   display: flex;
   justify-content: space-between;
+  overflow: scroll;
 }
-
-@media (max-width: 912px) {
-  .wrapper {
-    flex-direction: column;
-  }
-
-  img {
-    width: 200px;
-    height: 200px;
-  }
+.clips-wrapper::-webkit-scrollbar {
+    display: none;
 }
 </style>

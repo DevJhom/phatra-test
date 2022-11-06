@@ -1,7 +1,8 @@
 <script>
-import CardStyle1 from "../ui/CardStyle1";
-import CardStyle2 from "../ui/CardStyle2";
-import SeeAll from "../ui/SeeAll";
+import CardStyle1 from "../../ui/CardStyle1";
+import CardStyle2 from "../../ui/CardStyle2";
+import ArticleTitle from "../../ui/ArticleTitle";
+import SeeAll from "../../ui/SeeAll";
 
 import image1 from "@/assets/articles/article-1/img-article-1.jpg";
 import image2 from "@/assets/articles/article-2/img-article-2.jpg";
@@ -12,6 +13,7 @@ export default {
     CardStyle1,
     CardStyle2,
     SeeAll,
+    ArticleTitle
   },
   data() {
     return {
@@ -50,10 +52,10 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="pe-2">
     <div class="d-flex justify-content-between">
-      <span class="article-text">Article</span>
-      <see-all link="/articles" class="me-4"></see-all>
+      <article-title text="Article" class="article-title"></article-title>
+      <see-all class="me-3" link="/articles"></see-all>
     </div>
     <card-style-1
       class="d-flex"
@@ -79,22 +81,12 @@ export default {
 </template>
 
 <style scoped>
-.article-text {
-  font-family: Kanit;
-  font-size: 2rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  color: #594f74;
-}
 
 .wrapper {
   display: flex;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 480px) {
   .article-text {
     font-size: 1rem;
   }

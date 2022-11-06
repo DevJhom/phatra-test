@@ -1,5 +1,5 @@
 <script>
-import Rectangle from "../ui/Rectangle.vue";
+import Rectangle from "../../ui/Rectangle.vue";
 
 export default {
   name: "NavRectangles",
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <div class="container rectangles">
+  <div class="container component-wrapper">
     <div class="d-flex justify-content-center gap-2">
       <img
         @click="activeNext"
@@ -84,7 +84,7 @@ export default {
 </template>
 
 <style scoped>
-.rectangles {
+.component-wrapper {
   position: relative;
   margin-top: -25px;
   width: 100vw;
@@ -101,6 +101,10 @@ img.icons:hover {
 }
 
 @media (max-width: 912px) {
+  .component-wrapper {
+    margin-top: -8px;
+  }
+
   img.icons {
     margin: auto 10px;
     width: 10px;

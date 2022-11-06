@@ -14,9 +14,9 @@ export default {
 <template>
   <footer>
     <div class="footer-bg">
-      <div class="container pt-5">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-column">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-4 d-flex flex-column">
             <nuxt-link to="/">
               <main-logo></main-logo>
             </nuxt-link>
@@ -26,7 +26,7 @@ export default {
               แขวงห้วยขวาง กรุงเทพมหานคร 10310
             </span>
           </div>
-          <div class="d-flex flex-column">
+          <div class="col-2 d-flex flex-column">
             <span class="menu-title">เมนู</span>
             <ul class="list-unstyled menus">
               <li>
@@ -49,7 +49,7 @@ export default {
               </li>
             </ul>
           </div>
-          <div class="d-flex flex-column">
+          <div class="col-2 d-flex flex-column">
             <span class="menu-title">เมนู</span>
             <ul class="list-unstyled menus">
               <li>
@@ -72,7 +72,7 @@ export default {
               </li>
             </ul>
           </div>
-          <div class="d-flex flex-column">
+          <div class="col-4 d-flex flex-column">
             <span class="menu-title">ติดต่อเรา</span>
             <div class="d-flex justify-content-start">
               <img class="icons" src="@/assets/icons/ic-tel.svg" />

@@ -1,6 +1,6 @@
 <script>
-import FeaturedArticles from "../layout/FeaturedArticles";
-import FeaturedNews from "../layout/FeaturedNews";
+import FeaturedArticles from "./FeaturedArticles";
+import FeaturedNews from "./FeaturedNews";
 
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="container wrapper">
+  <div class="container component-wrapper">
     <featured-articles class="featured-articles"></featured-articles>
     <div class="featured-news">
       <featured-news></featured-news>
@@ -20,7 +20,8 @@ export default {
 </template>
 
 <style scoped>
-.wrapper {
+
+.component-wrapper {
   display: flex;
   width: 100vw;
   margin-top: 100px;
@@ -36,9 +37,20 @@ export default {
 }
 
 @media (max-width: 912px) {
-  .wrapper {
+  .featured-articles {
+    width: 60%;
+  }
+
+  .featured-news {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .component-wrapper {
     flex-direction: column;
     margin-top: 20px;
+    padding-bottom: 50px;
   }
 
   .featured-articles {

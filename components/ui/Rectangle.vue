@@ -22,11 +22,11 @@ export default {
 .rectangle {
   display: flex;
   align-items: center;
-  width: 16rem;
-  height: 5.375rem;
-  padding-left: 2rem;
+  width: 15vw;
+  height: 4.5vw;
+  padding-left: 1.5rem;
   font-family: "Kanit";
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -53,7 +53,19 @@ export default {
   );
 }
 
-@media (max-width: 912px) {
+@media (max-width: 1080px) {
+  .rectangle {
+    height: 3rem;
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+  }
+
+  .inactive {
+    border-bottom: 5px solid #655a9f;
+  }
+}
+
+@media (max-width: 480px) {
   .rectangle {
     height: 1.5rem;
     font-size: 0.4rem;
