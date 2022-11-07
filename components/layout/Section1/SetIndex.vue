@@ -10,44 +10,54 @@ export default {
 </script>
 
 <template>
-  <div class="component-wrapper d-flex flex-column">
-    <article-title text="Set Index" class="article-title"></article-title>
-    <!-- <iframe
-      frameborder="0"
-      scrolling="no"
-      width="200"
-      height="206"
-      src="http://www.settrade.com/banner/banner3.jsp"
-    ></iframe> -->
+  <div class="component-wrapper">
+    <article-title text="Set Index" class="title"></article-title>
     <iframe
-      frameborder="0"
-      scrolling="no"
+      src="https://weblink.settrade.com/banner/banner3.jsp"
       width="200"
       height="260"
-      src="https://weblink.settrade.com/banner/banner3.jsp"
+      frameborder="0"
+      scrolling="no"
     ></iframe>
   </div>
 </template>
 
 <style scoped>
 .component-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  height: 300px;
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #fff;
 }
 
+.title {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 3rem;
+}
+
 iframe {
-  width: 100%;
-  height: 100%;
-  margin: 8px 0 0 6px;
   object-fit: contain;
   align-self: center;
 }
 
 @media (max-width: 912px) {
   .component-wrapper {
-    padding: 1rem;
+    padding: 5px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  iframe {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -56,6 +66,11 @@ iframe {
     margin: 0;
     padding: 15px;
     height: 120px;
+  }
+
+  iframe {
+    width: 100px;
+    height: 100px;
   }
 
   .title {

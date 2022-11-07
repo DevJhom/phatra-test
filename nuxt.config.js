@@ -1,5 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  server: {
+    port: 8000, // default: 3000
+    host: '127.0.0.1' // default: localhost
+  },
   head: {
     title: "phatra-test",
     htmlAttrs: {

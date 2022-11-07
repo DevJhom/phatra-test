@@ -59,7 +59,6 @@ export default {
 </template>
 
 <style scoped>
-
 .kkp-box {
   display: flex;
   margin-bottom: 1.5rem;
@@ -144,13 +143,16 @@ iframe {
 
   .long-line {
     margin: 1rem 0;
+    width: 150px;
   }
 
   .kkp-focus {
     font-size: 1.5rem;
   }
+
   .kkp-focus-text {
     font-size: 0.8rem;
+    width: 150px;
   }
 }
 

@@ -48,6 +48,10 @@ img {
   width: 100%;
 }
 
+img:hover {
+  scale: 1.01;
+}
+
 @media (max-width: 480px) {
   .wrapper {
     flex-direction: row;
