@@ -32,7 +32,6 @@ export default {
 <style scoped>
 .component-wrapper {
   width: 100%;
-  aspect-ratio: 1 / 1;
   margin-top: 36px;
   padding: 2rem;
   background-color: #fff;
