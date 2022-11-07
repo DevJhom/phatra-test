@@ -28,8 +28,7 @@ export default {
 
 <style scoped>
 .bg {
-  width: 100vw;
   background-image: url(@/assets/bg/bg.png);
-  background-size: cover;
+  background-size: 100% 100%;
 }
 </style>

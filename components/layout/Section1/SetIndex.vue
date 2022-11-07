@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .component-wrapper {
   width: 100%;
-  margin-top: 36px;
+  margin-top: 3rem;
   padding: 2rem;
   background-color: #fff;
 }
@@ -47,7 +47,6 @@ iframe {
 
 @media (max-width: 912px) {
   .component-wrapper {
-    margin: 0;
     padding: 1rem;
   }
 }
@@ -56,6 +55,7 @@ iframe {
   .component-wrapper {
     margin: 0;
     padding: 15px;
+    height: 120px;
   }
 
   .title {
