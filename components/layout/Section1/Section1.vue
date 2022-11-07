@@ -20,10 +20,9 @@ export default {
 </template>
 
 <style scoped>
-
 .component-wrapper {
   display: flex;
-  width: 100vw;
+  width: 100%;
   margin-top: 100px;
   padding-bottom: 150px;
 }
@@ -34,16 +33,6 @@ export default {
 
 .featured-news {
   width: 30%;
-}
-
-@media (max-width: 912px) {
-  .featured-articles {
-    width: 60%;
-  }
-
-  .featured-news {
-    width: 40%;
-  }
 }
 
 @media (max-width: 480px) {

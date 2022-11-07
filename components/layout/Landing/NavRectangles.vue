@@ -92,7 +92,7 @@ export default {
 
 img.icons {
   margin: auto 25px;
-  width: 30px;
+  width: 25px;
   height: 33px;
 }
 

@@ -58,6 +58,22 @@ a {
 
 @media (max-width: 912px) {
   .text {
+    font-size: 0.8rem;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon {
+    width: 8px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
     font-size: 0.5rem;
   }
 

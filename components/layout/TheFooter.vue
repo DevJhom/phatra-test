@@ -74,15 +74,15 @@ export default {
           </div>
           <div class="col-4 d-flex flex-column">
             <span class="menu-title">ติดต่อเรา</span>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-start mb-1">
               <img class="icons" src="@/assets/icons/ic-tel.svg" />
               <span class="contact">(66) 2305 9800</span>
             </div>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-start mb-1">
               <img class="icons" src="@/assets/icons/ic-fax.svg" />
               <span class="contact">(66) 2305 9800</span>
             </div>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-start mb-1">
               <img class="icons" src="@/assets/icons/ic-mail.svg" />
               <span class="contact email">customerservice@phatraasset.com</span>
             </div>

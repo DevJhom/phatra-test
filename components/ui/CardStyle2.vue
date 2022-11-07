@@ -34,22 +34,24 @@ export default {
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-right: 0.8rem;
+  margin: 2rem 0.8rem 0 0;
 }
 
 img {
-  width: 20vw;
+  width: 95%;
   height: auto;
   object-fit: contain;
-  margin: 33px 27px 29px 2px;
 }
 
 img:hover {
   border-right: 15px solid #594f74;
 }
 
-.text-wrapper{
-  width: 100%;
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-top: 26px;
 }
 
 .category {
@@ -61,8 +63,16 @@ a {
 }
 
 @media (max-width: 912px) {
-  img {
-    margin: 33px 0 0 0;
+  .wrapper {
+    margin: 1rem 0.2rem 0 0;
+  }
+
+  .text-wrapper {
+    margin: 8px;
+  }
+
+  .category {
+    margin-top: 8px;
   }
 }
 
@@ -71,14 +81,17 @@ a {
     flex-direction: row;
   }
 
+  .text-wrapper {
+    margin-top: 0;
+    margin-left: 8px;
+  }
+
   .category {
     margin-top: 5px;
   }
 
   img {
     width: 200px;
-    height: auto;
-    margin: 8px 8px 0 0;
   }
 }
 </style>

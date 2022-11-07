@@ -43,6 +43,7 @@ export default {
     <see-all class="d-flex justify-content-end my-2" link="/clips"></see-all>
     <div class="clips-wrapper">
       <card-style-3
+        class="me-2"
         v-for="clip in clips"
         :key="clip.id"
         :name="clip.id"

@@ -22,8 +22,8 @@ export default {
 <template>
   <nuxt-link :to="link + ''">
     <img :src="imgSrc" :alt="name" />
-    <div class="d-flex flex-column">
-      <article-heading :text="heading" class="heading"></article-heading>
+    <div class="d-flex flex-column text-wrapper">
+      <article-heading :text="heading"></article-heading>
       <small class="details">
         {{ details }}
       </small>
@@ -38,24 +38,21 @@ export default {
 img {
   width: 60%;
   height: auto;
-  margin: 26px 15px 15px 0;
+  margin: 26px 0 15px 0;
   object-fit: contain;
+  align-self: start;
 }
 
 img:hover {
   border-right: 15px solid #594f74;
 }
 
-.heading {
-  margin: 26px 42px 17px 27px;
-}
-
-.heading:hover {
-  color: #8272ab;
+.text-wrapper {
+  width: 40%;
+  margin: 26px 0 0 26px;
 }
 
 .details {
-  margin: 17px 30px 33px 27px;
   font-family: Tahoma;
   font-size: 1rem;
   font-weight: normal;
@@ -67,53 +64,49 @@ img:hover {
 }
 
 .category {
-  margin: 0 0 0 27px;
+  margin-top: 26px;
 }
 
 a {
   text-decoration: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 999px) {
   img {
     width: 50%;
-    height: auto;
-    margin: 0;
-    object-fit: contain;
-    align-self: start;
   }
 
-  .heading {
-    margin: 0 8px 8px 8px;
+  .text-wrapper {
+    width: 50%;
+    margin: 26px 0 0 8px;
   }
 
   .details {
-    font-size: 0.8rem;
-    margin: 0 0 8px 8px;
+    font-size: 0.6rem;
   }
 
   .category {
-    margin: 0 0 0 8px;
+    margin-top: 8px;
   }
 }
 
 @media (max-width: 480px) {
   img {
     width: 200px;
-    height: auto;
-    margin: 0;
-  }
-
-  .heading {
-    margin: 0 0 8px 8px;
   }
 
   .details {
     font-size: 0.5rem;
-    margin: 0 0 8px 8px;
   }
+
   .category {
-    margin: 0 0 0 8px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .details {
+    display: none;
   }
 }
 </style>

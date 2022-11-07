@@ -60,7 +60,7 @@ export default {
         title="KKP Focus"
       >
       </iframe>
-      <div class="d-flex flex-column ms-2">
+      <div class="d-flex flex-column ms-2 my-auto">
         <div class="long-line"></div>
         <span class="kkp-focus">{{ active }}</span>
         <span class="kkp-focus-text">
@@ -137,14 +137,14 @@ export default {
 }
 
 iframe {
-  width: 720px;
-  height: 414px;
+  width: 60%;
+  height: 450px;
 }
 
 .long-line {
   width: 266px;
   height: 2px;
-  margin: 10px 19px 0px 44px;
+  margin: 2rem 2rem;
   border-style: solid;
   border-width: 2px;
   border-image-source: linear-gradient(
@@ -157,7 +157,7 @@ iframe {
 }
 
 .kkp-focus {
-  margin: 64px 13px 14px 50px;
+  margin-left: 2rem;
   font-family: Kanit;
   font-size: 42px;
   font-weight: 500;
@@ -168,7 +168,7 @@ iframe {
 
 .kkp-focus-text {
   width: 276px;
-  margin: 14px 0 76px 53px;
+  margin-left: 2rem;
   font-family: Kanit;
   font-size: 20px;
   font-weight: normal;
@@ -209,8 +209,8 @@ iframe {
   }
 
   iframe {
-    width: 50vw;
-    height: 120px;
+    width: 50%;
+    height: 200px;
     margin: 0;
   }
 

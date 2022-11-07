@@ -12,32 +12,35 @@ export default {
 <template>
   <div class="component-wrapper d-flex flex-column">
     <article-title text="Set Index" class="article-title"></article-title>
-    <iframe
+    <!-- <iframe
       frameborder="0"
       scrolling="no"
       width="200"
       height="206"
       src="http://www.settrade.com/banner/banner3.jsp"
-    ></iframe>
-    <!-- <iframe
+    ></iframe> -->
+    <iframe
       frameborder="0"
       scrolling="no"
       width="200"
       height="260"
       src="https://weblink.settrade.com/banner/banner3.jsp"
-    ></iframe> -->
+    ></iframe>
   </div>
 </template>
 
 <style scoped>
 .component-wrapper {
-  margin: 36px 0 0 0px;
-  padding: 10px 32px 21px 43px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-top: 36px;
+  padding: 2rem;
   background-color: #fff;
-  width: 80%;
 }
 
 iframe {
+  width: 100%;
+  height: 100%;
   margin: 8px 0 0 6px;
   object-fit: contain;
   align-self: center;
@@ -46,13 +49,7 @@ iframe {
 @media (max-width: 912px) {
   .component-wrapper {
     margin: 0;
-    padding: 0;
-  }
-
-  iframe {
-    width: 150px;
-    height: auto;
-    margin: 0;
+    padding: 1rem;
   }
 }
 
@@ -65,12 +62,6 @@ iframe {
   .title {
     margin: 0;
     font-size: 1rem;
-  }
-
-  iframe {
-    width: 150px;
-    height: auto;
-    margin: 0;
   }
 }
 </style>

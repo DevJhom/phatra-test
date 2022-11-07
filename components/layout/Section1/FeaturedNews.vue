@@ -20,7 +20,7 @@ export default {
         <article-title text="News"></article-title>
         <see-all link="/news"></see-all>
       </div>
-      <nuxt-link to="/news/news-Id">
+      <nuxt-link to="/news/news1">
         <img src="@/assets/news/img-news.jpg" alt="news" />
       </nuxt-link>
     </div>
@@ -40,12 +40,12 @@ export default {
 }
 
 .heading-wrapper {
-  width: 80%;
+  width: 100%;
 }
 
 img {
   margin: 26px 15px 15px 0;
-  width: 80%;
+  width: 100%;
 }
 
 @media (max-width: 480px) {

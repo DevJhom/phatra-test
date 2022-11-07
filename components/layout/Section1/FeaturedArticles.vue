@@ -13,7 +13,7 @@ export default {
     CardStyle1,
     CardStyle2,
     SeeAll,
-    ArticleTitle
+    ArticleTitle,
   },
   data() {
     return {
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-  <div class="pe-2">
+  <div>
     <div class="d-flex justify-content-between">
       <article-title text="Article" class="article-title"></article-title>
       <see-all class="me-3" link="/articles"></see-all>
@@ -64,26 +64,30 @@ export default {
       :details="articles[0].details"
       :category="articles[0].category"
       :imgSrc="articles[0].imageUrl"
-      link="/articles/article-Id"
+      :link="'/articles/article' + articles[0].id"
     ></card-style-1>
     <div class="wrapper">
       <card-style-2
+        class="card-style-2"
         v-for="article in articles.slice(1)"
         :key="article.id"
         :name="article.id"
         :heading="article.heading"
         :category="article.category"
         :imgSrc="article.imageUrl"
-        :link="'/articles/article-Id'"
+        :link="'/articles/article' + article.id"
       ></card-style-2>
     </div>
   </div>
 </template>
 
 <style scoped>
-
 .wrapper {
   display: flex;
+}
+
+.card-style-2 {
+  width: 50%;
 }
 
 @media (max-width: 480px) {
@@ -93,6 +97,10 @@ export default {
 
   .wrapper {
     flex-direction: column;
+  }
+
+  .card-style-2 {
+    width: 100%;
   }
 }
 </style>
